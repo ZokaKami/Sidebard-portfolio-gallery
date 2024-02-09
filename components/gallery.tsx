@@ -6,57 +6,28 @@ import Griffon from "./images/griffon.jpg";
 import Frog from "./images/frog.jpg";
 export default function Gallery() {
   return (
-    <div className="px-2 pb-2  flex flex-wrap lg:flex-col lg:flex-start lg:flex  lg:absolute lg:top-[5px] lg:left-[350px]">
-      <div className="lg:flex lg:flex-1">
-        <img
-          className="rounded-2xl object-cover h-auto lg:w-1/3  p-[4px]   lg:object-contain"
-          src={Borzoi}
-          alt=""
-        />
-
-        <img
-          className="rounded-2xl  object-cover    h-auto lg:w-1/3  p-[4px] lg:object-cover "
-          src={Necro}
-          alt=""
-        />
-
-        <img
-          className="rounded-2xl object-cover h-auto lg:w-1/3   p-[4px] "
-          src={Frog}
-          alt=""
-        />
-      </div>
-
-      <div className="lg:flex lg:flex-1">
-        <img
-          className="rounded-2xl lg:w-1/3 object-cover  h-auto   p-[4px]"
-          src={Statua}
-          alt=""
-        />
-
-        <img
-          className="rounded-2xl lg:w-2/3 object-cover  h-auto  object-fit object-center p-[4px]"
-          src={Griffon}
-          alt=""
-        />
-      </div>
-      <div className="lg:flex lg:flex-1">
-        {" "}
-        <img
-          className="rounded-2xl lg:w-1/3 object-cover  h-auto   p-[4px]"
-          src={Statua}
-          alt=""
-        />
-        <img
-          className="rounded-2xl lg:w-1/3 object-cover  h-auto  object-fit object-center p-[4px]"
-          src={Statua}
-          alt=""
-        />
-        <img
-          className="rounded-2xl lg:w-1/3 object-cover   h-auto p-[4px] "
-          src={Frog}
-          alt=""
-        />
+    <div className="lg:absolute lg:top-2 lg:left-[21%] ">
+      <div className=" px-4 pb-2  lg:flex  space-y-4      lg:w-[100%]     ">
+        <div className="flex flex-col gap-[20px] w-[100%]">
+          <img src={Borzoi} className="w-[100%] h-auto object-cover" alt="" />
+          <img src={Necro} className="w-[100%] h-auto object-cover" alt="" />
+          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
+        </div>
+        <div className="flex flex-col gap-[20px] w-[100%]">
+          <img src={Frog} className="w-[100%] h-auto object-cover" alt="" />
+          <img
+            src={Griffon}
+            className="w-[100%] h-auto object-cover 
+            "
+            alt=""
+          />
+          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
+        </div>
+        <div className="flex flex-col gap-[20px] w-[100%]">
+          <img src={Griffon} className="w-[100%] h-auto object-cover" alt="" />
+          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
+          <img src={Borzoi} className="w-[100%] h-auto object-cover" alt="" />
+        </div>
       </div>
     </div>
   );
