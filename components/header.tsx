@@ -7,9 +7,8 @@ import {
   faXTwitter,
   faArtstation,
   faDiscord,
-  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-export default function Header() {
+export default function Header({ count, setCount }) {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
@@ -31,7 +30,7 @@ export default function Header() {
 
   return (
     <div className=" px-[10px] py-[8px] h-[100%] lg:bg-[#021D24] lg:w-[20%]   lg:fixed  lg:top-0 lg:left-0  box-content">
-      <div className=" h-[98%] flex flex-col     bg-white  border-solid  border-[#021D24] rounded-2xl text-center p-2 lg:p-8 space-y-4 lg:space-y-2">
+      <div className=" h-[98%] flex flex-col     bg-white  border-solid  border-[#021D24] rounded-2xl text-center   lg:py-8 space-y-4 lg:space-y-2">
         <ul className="     ">
           <li className=" lg:w-[130px] w-[60px] lg:mx-auto">
             <img src={ZeljkaPFP} className="rounded-full" alt="" />
@@ -47,22 +46,42 @@ export default function Header() {
             </button>
           </li>
 
-          <li className="hidden lg:block    text-[34px] font-bold    ">
+          <li className="hidden lg:block    text-[34px] font-bold  py-4  ">
             <h1>Zeljka Dobras</h1>
           </li>
 
           {openMenu && (
-            <li className="    lg:block  justify-around max-w-[600px] mx-auto  text-[16px]    ">
-              <div className="space-y-2">
-                <p>Placeholder</p>
-                <p>Content creator</p>
-                <p>Placeholder</p>
-
-                <p>Pixel art</p>
-                <p>Content creator</p>
-                <p>Placeholder</p>
-              </div>
-            </li>
+            <ul className="w-full space-y-4 ">
+              <li>
+                <button
+                  onClick={() => setCount("home")}
+                  className="border-b-2 w-[100%] py-2"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setCount("pixel")}
+                  className="border-b-2 w-[100%] py-2"
+                >
+                  Pixel art
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => setCount("comissions")}
+                  className="border-b-2 w-[100%] py-2"
+                >
+                  Comissions
+                </button>
+              </li>
+              <li>
+                <button className="border-b-2 w-[100%] py-2">
+                  Placeholder
+                </button>
+              </li>
+            </ul>
           )}
           <li
             className={`${
