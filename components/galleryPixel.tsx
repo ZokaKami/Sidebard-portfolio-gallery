@@ -5,24 +5,30 @@ import Statua from "./images/statua.jpg";
 import Griffon from "./images/griffon.jpg";
 import Frog from "./images/frog.jpg";
 export default function Gallerypixel() {
+  const galleryImages = [
+    Borzoi,
+    Necro,
+    Statua,
+    Frog,
+    Griffon,
+    Statua,
+    Necro,
+    Frog,
+  ];
+
+  const splitImages = [galleryImages.slice(0, 4), galleryImages.slice(4, 8)];
+
+  const render = splitImages.map((group) => (
+    <div className="flex flex-col gap-[20px] w-[100%]">
+      {group.map((data) => (
+        <img src={data} className="w-[100%] h-auto object-cover" alt="" />
+      ))}
+    </div>
+  ));
   return (
     <div className="lg:absolute lg:top-2 lg:left-[21%] ">
       <div className=" px-4 pb-2  lg:flex    gap-4   lg:w-[100%]     ">
-        <div className="flex flex-col gap-[20px] w-[100%]">
-          <img src={Borzoi} className="w-[100%] h-auto object-cover" alt="" />
-          <img src={Necro} className="w-[100%] h-auto object-cover" alt="" />
-          <img src={Statua} className="w-[100%] h-auto object-cover  " alt="" />
-        </div>
-        <div className="flex flex-col gap-[20px] w-[100%]">
-          <img src={Frog} className="w-[100%] h-auto object-cover" alt="" />
-          <img
-            src={Griffon}
-            className="w-[100%] h-auto object-cover 
-            "
-            alt=""
-          />
-          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
-        </div>
+        {render}
       </div>
     </div>
   );

@@ -1,34 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import Borzoi from "./images/borzoi.jpg";
 import Necro from "./images/necromanger.jpg";
 import Statua from "./images/statua.jpg";
 import Griffon from "./images/griffon.jpg";
 import Frog from "./images/frog.jpg";
+
+import BorzoiPage from "./processPages/borzoiPage.tsx";
+import FrogPage from "./processPages/frogPage.tsx";
+
 export default function Gallery() {
-  return (
-    <div className="lg:absolute lg:top-2 lg:left-[21%] ">
-      <div className=" px-4 pb-2  lg:flex  space-y-4 lg:space-y-0 gap-[20px]     lg:w-[100%]     ">
-        <div className="flex flex-col gap-[20px] w-[100%]">
-          <img src={Borzoi} className="w-[100%] h-auto object-cover" alt="" />
-          <img src={Necro} className="w-[100%] h-auto object-cover" alt="" />
-          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
-        </div>
-        <div className="flex flex-col gap-[20px] w-[100%]">
-          <img src={Frog} className="w-[100%] h-auto object-cover" alt="" />
+  const galleryImages = [
+    {
+      name: Borzoi,
+      alt: "Borzoi",
+    },
+    {
+      name: Necro,
+      alt: "Necro",
+    },
+    {
+      name: Statua,
+      alt: "Statua",
+    },
+    {
+      name: Griffon,
+      alt: "Griffon",
+    },
+    {
+      name: Frog,
+      alt: "Frog",
+    },
+    {
+      name: Borzoi,
+      alt: "Borzoi",
+    },
+    {
+      name: Statua,
+      alt: "Statua",
+    },
+    {
+      name: Griffon,
+      alt: "Griffon",
+    },
+    {
+      name: Frog,
+      alt: "Frog",
+    },
+  ];
+  const splitImages = [
+    galleryImages.slice(0, 3),
+    galleryImages.slice(3, 6),
+    galleryImages.slice(6, 9),
+  ];
+  const [changePage, setChangepage] = useState("");
+  const render = splitImages.map((group) => (
+    <div className="flex flex-col gap-[20px] w-[100%]">
+      {group.map((data) => (
+        <div>
           <img
-            src={Griffon}
-            className="w-[100%] h-auto object-cover 
-            "
-            alt=""
+            onClick={() => setChangepage(data.alt)}
+            id={data.alt}
+            src={data.name}
+            className="w-[100%] h-auto object-cover"
+            alt={data.alt}
           />
-          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
         </div>
-        <div className="flex flex-col gap-[20px] w-[100%]">
-          <img src={Griffon} className="w-[100%] h-auto object-cover" alt="" />
-          <img src={Statua} className="w-[100%] h-auto object-cover" alt="" />
-          <img src={Borzoi} className="w-[100%] h-auto object-cover" alt="" />
-        </div>
-      </div>
+      ))}
     </div>
-  );
+  ));
+  console.log(changePage);
+  const renderComponent = () => {
+    switch (changePage) {
+      case "Frog":
+        return <FrogPage />;
+      case "Borzoi":
+        return <BorzoiPage />;
+      default:
+        return (
+          <div className="lg:absolute lg:top-2 lg:left-[21%] ">
+            <div className=" px-4 pb-2  lg:flex    gap-4   lg:w-[100%]     ">
+              {render}
+            </div>
+          </div>
+        );
+    }
+  };
+
+  return <div>{renderComponent()}</div>;
 }
