@@ -10,12 +10,14 @@ import GalleryPixel from "/components/galleryPixel.tsx"
 import Comissions from "/components/comissions.tsx"
 function App() {
   const [count, setCount] = useState("home");
-  console.log(count)
+  const [changePage, setChangepage] = useState(" ");
+   
   return (
-    <div className=' '>
-      <Header  count={count} setCount={setCount}  />
+    <div className='   '>
+      <Header  count={count} setCount={setCount} setChangepage={setChangepage}  />
+      
 
-     {count===("home") && <Gallery/>}
+     {count===("home") && <Gallery changePage={changePage}  setChangepage={setChangepage} />}
      {count===("pixel") && <GalleryPixel/>}
      {count===("comissions") && <Comissions/>}
     </div>

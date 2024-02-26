@@ -1,58 +1,17 @@
 import React, { useState } from "react";
-import Borzoi from "./images/borzoi.jpg";
-import Necro from "./images/necromanger.jpg";
-import Statua from "./images/statua.jpg";
-import Griffon from "./images/griffon.jpg";
-import Frog from "./images/frog.jpg";
 
+import galleryImages from "./images.js";
 import BorzoiPage from "./processPages/borzoiPage.tsx";
-import FrogPage from "./processPages/frogPage.tsx";
 
-export default function Gallery() {
-  const galleryImages = [
-    {
-      name: Borzoi,
-      alt: "Borzoi",
-    },
-    {
-      name: Necro,
-      alt: "Necro",
-    },
-    {
-      name: Statua,
-      alt: "Statua",
-    },
-    {
-      name: Griffon,
-      alt: "Griffon",
-    },
-    {
-      name: Frog,
-      alt: "Frog",
-    },
-    {
-      name: Borzoi,
-      alt: "Borzoi",
-    },
-    {
-      name: Statua,
-      alt: "Statua",
-    },
-    {
-      name: Griffon,
-      alt: "Griffon",
-    },
-    {
-      name: Frog,
-      alt: "Frog",
-    },
-  ];
+import GriffonPage from "./processPages/griffonPage.tsx";
+
+export default function Gallery({ changePage, setChangepage }) {
   const splitImages = [
     galleryImages.slice(0, 3),
     galleryImages.slice(3, 6),
     galleryImages.slice(6, 9),
   ];
-  const [changePage, setChangepage] = useState("");
+
   const render = splitImages.map((group) => (
     <div className="flex flex-col gap-[20px] w-[100%]">
       {group.map((data) => (
@@ -68,16 +27,17 @@ export default function Gallery() {
       ))}
     </div>
   ));
-  console.log(changePage);
+
   const renderComponent = () => {
     switch (changePage) {
-      case "Frog":
-        return <FrogPage />;
+      case "Griffon":
+        return <GriffonPage />;
       case "Borzoi":
-        return <BorzoiPage />;
+        return <BorzoiPage image={galleryImages[0].name} />;
+
       default:
         return (
-          <div className="lg:absolute lg:top-2 lg:left-[21%] ">
+          <div className="lg:absolute lg:top-2 lg:left-[21%]  ">
             <div className=" px-4 pb-2  lg:flex    gap-4   lg:w-[100%]     ">
               {render}
             </div>
