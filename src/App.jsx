@@ -18,7 +18,7 @@ function App() {
       
 
      {count===("home") && <Gallery changePage={changePage}  setChangepage={setChangepage} />}
-     {count===("pixel") && <GalleryPixel/>}
+     {count===("pixel") && <GalleryPixel changePage={changePage}  setChangepage={setChangepage}/>  }
      {count===("comissions") && <Comissions/>}
     </div>
   )

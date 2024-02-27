@@ -22,7 +22,7 @@ export default function Header({ setCount, setChangepage }) {
   const socialMedia = socialIcons.map((icons) => (
     <a href={icons.url}>
       <FontAwesomeIcon
-        className="w-8 h-8 xl:w-10 xl:h-10 rounded-full  hover:text-[#435778] transition-all ease-in-out duration-300  p-[2px]"
+        className="lg:w-8 lg:h-8 w-6 h-6   xl:w-10 xl:h-10 rounded-full  hover:text-[#435778] transition-all ease-in-out duration-300  p-[2px]"
         icon={icons.name}
       />
     </a>
@@ -105,10 +105,11 @@ export default function Header({ setCount, setChangepage }) {
           )}
           <li
             className={`${
-              !openMenu ? "absolute top-7   " : ""
-            }  lg:absolute   lg:bottom-5 lg:py-4   left-1/2 right-1/2 transition-all ease-in-out duration-300`}
+              !openMenu ? "absolute top-4  " : ""
+            }  lg:absolute   lg:bottom-5 lg:py-4 left-[80px]   lg:left-1/2 lg:right-1/2 transition-all ease-in-out duration-300`}
           >
-            <div className="flex  lg:flex-nowrap   h-full justify-center     ">
+            <div className=" lg:flex  lg:flex-nowrap   h-full lg:justify-center     ">
+              <p className="font-bold lg:hidden">Zeljka Dobras</p>
               {socialMedia}
             </div>
           </li>

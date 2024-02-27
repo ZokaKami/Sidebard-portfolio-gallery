@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import galleryLunafon from "./imagesLunafon.js";
-import BorzoiPage from "./processPages/borzoiPage.tsx";
 
 import GriffonPage from "./processPages/griffonPage.tsx";
 
@@ -23,22 +22,18 @@ export default function Gallery({ changePage, setChangepage }) {
       ))}
     </div>
   ));
-
+  console.log(changePage);
   const renderComponent = () => {
-    switch (changePage) {
-      case "Griffon":
-        return <GriffonPage />;
-      case "Borzoi":
-        return <BorzoiPage image={galleryLunafon[0].name} />;
-
-      default:
-        return (
-          <div className="lg:absolute lg:top-2 lg:left-[21%]  ">
-            <div className=" px-4 pb-2  lg:flex    gap-4   lg:w-[100%]     ">
-              {render}
-            </div>
+    if (changePage === " ") {
+      return (
+        <div className="lg:absolute lg:top-2 lg:left-[21%]  ">
+          <div className=" px-4 pb-2  lg:flex    gap-4   lg:w-[100%]     ">
+            {render}
           </div>
-        );
+        </div>
+      );
+    } else {
+      return <GriffonPage valueName={changePage} />;
     }
   };
 
