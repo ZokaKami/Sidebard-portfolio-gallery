@@ -42,6 +42,6 @@ const galleryLunafon = [
   
  
   ];
-  
+ 
 export default galleryLunafon;
  

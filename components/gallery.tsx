@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
-import galleryImages from "./images.js";
+import imagesHome from "./imagesHome.js";
 import BorzoiPage from "./processPages/borzoiPage.tsx";
 
-import GriffonPage from "./processPages/griffonPage.tsx";
+import GriffonPage from "./processPages/renderPage.tsx";
 
 export default function Gallery({ changePage, setChangepage }) {
   const splitImages = [
-    galleryImages.slice(0, 3),
-    galleryImages.slice(3, 6),
-    galleryImages.slice(6, 9),
+    imagesHome.slice(0, 3),
+    imagesHome.slice(3, 6),
+    imagesHome.slice(6, 9),
   ];
 
   const render = splitImages.map((group) => (
-    <div className="flex flex-col gap-[20px] w-[100%]">
+    <div className="flex flex-col gap-[20px] w-[100%] pb-4">
       {group.map((data) => (
-        <div>
+        <div className=" ">
           <img
             onClick={() => setChangepage(data.alt)}
             id={data.alt}
@@ -33,12 +33,12 @@ export default function Gallery({ changePage, setChangepage }) {
       case "Griffon":
         return <GriffonPage />;
       case "Borzoi":
-        return <BorzoiPage image={galleryImages[0].name} />;
+        return <BorzoiPage image={imagesHome[0].name} />;
 
       default:
         return (
-          <div className="lg:absolute lg:top-2 lg:left-[21%]  ">
-            <div className=" px-4 pb-2  lg:flex    gap-4   lg:w-[100%]     ">
+          <div className="lg:absolute lg:top-2 lg:left-[21%]    ">
+            <div className=" px-4    lg:flex    gap-4   lg:w-[100%]     ">
               {render}
             </div>
           </div>

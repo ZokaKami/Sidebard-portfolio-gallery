@@ -73,6 +73,15 @@ export default function Header({ setCount, setChangepage }) {
               <button
                 onClick={() => {
                   setChangepage(" ");
+                  setCount("about");
+                }}
+                className="border-b-2 w-[100%] py-4 h-fill"
+              >
+                About me
+              </button>
+              <button
+                onClick={() => {
+                  setChangepage(" ");
                   setCount("home");
                 }}
                 className="border-b-2 w-[100%] py-4 h-fill"

@@ -27,7 +27,7 @@ export default function Comissions() {
   ];
 
   const render = splitImages.map((group) => (
-    <div className="flex flex-col gap-[20px] w-[100%]">
+    <div className="flex flex-col gap-[20px] w-[100%] pb-4">
       {group.map((data) => (
         <img src={data} className="w-[100%] h-auto object-cover" alt="" />
       ))}
