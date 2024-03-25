@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-import imagesHome from "./imagesHome.js";
+import { imagesHome } from "./imagesHome.js";
 import BorzoiPage from "./processPages/borzoiPage.tsx";
 
-import GriffonPage from "./processPages/renderPage.tsx";
+import GriffonPage from "./processPages/renderLunafon.tsx";
 
 export default function Gallery({ changePage, setChangepage }) {
   const splitImages = [

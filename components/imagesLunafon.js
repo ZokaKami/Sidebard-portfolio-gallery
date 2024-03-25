@@ -9,7 +9,7 @@ import WoodOne from "./images/WoodOne.png";
 
  
  
-const galleryLunafon = [
+export const galleryLunafon = [
     {
       name: AssetsOne,
       alt: "Assets",
@@ -42,6 +42,5 @@ const galleryLunafon = [
   
  
   ];
- 
-export default galleryLunafon;
- 
+
+  

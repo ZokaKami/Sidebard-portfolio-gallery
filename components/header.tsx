@@ -91,22 +91,21 @@ export default function Header({ setCount, setChangepage }) {
 
               <button
                 onClick={() => {
-                  setCount("pixel");
+                  setCount("lunafon");
                   setChangepage(" ");
                 }}
                 className="border-b-2 w-[100%] py-4"
               >
                 Lunafon
               </button>
-
               <button
                 onClick={() => {
-                  setCount("comissions");
+                  setCount("pixel");
                   setChangepage(" ");
                 }}
                 className="border-b-2 w-[100%] py-4"
               >
-                Comissions
+                Pixel
               </button>
 
               <button className="border-b-2 w-[100%] py-4">Placeholder</button>

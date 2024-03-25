@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { galleryPixel } from "./imagesPixel.js";
+import { galleryLunafon } from "./imagesLunafon.js";
 
-import RenderPixel from "./processPages/renderPixel.tsx";
+import RenderPage from "./processPages/renderLunafon.tsx";
 
 export default function Gallery({ changePage, setChangepage }) {
-  const splitImages = [galleryPixel.slice(0, 4), galleryPixel.slice(4, 8)];
+  const splitImages = [galleryLunafon.slice(0, 3), galleryLunafon.slice(3, 8)];
 
   const render = splitImages.map((group) => (
     <div className="flex flex-col gap-[20px] w-[100%] pb-4">
@@ -33,7 +33,7 @@ export default function Gallery({ changePage, setChangepage }) {
         </div>
       );
     } else {
-      return <RenderPixel valueName={changePage} />;
+      return <RenderPage valueName={changePage} />;
     }
   };
 

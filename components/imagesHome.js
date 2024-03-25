@@ -9,7 +9,7 @@ import Protector from "./images/protector.jpg";
 import Sin from "./images/sin.jpeg";
 
 
-const imagesHome = [
+export const imagesHome = [
     {
       name: Borzoi,
       alt: "Borzoi",
@@ -51,5 +51,5 @@ const imagesHome = [
  
   ];
   
-export default imagesHome;
+ 
  
