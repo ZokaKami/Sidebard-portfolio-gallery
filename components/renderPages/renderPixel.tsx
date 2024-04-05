@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import PixelSubGallery from "../PixelSubGallery.js";
+
 import LunafonSubGallery from "../LunafonSubGallery.js";
 function RenderPage() {
   let { userId } = useParams();
