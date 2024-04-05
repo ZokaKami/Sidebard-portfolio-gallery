@@ -1,4 +1,4 @@
-import MysticSword from "./images/mysticlands/MysticSword.png";
+import MysticSword from "./images/mysticlands/mysticsword.png";
 import Winter from "./images/mysticlands/winter1.png";
 import Forest from "./images/mysticlands/forest1.png";
 import House from "./images/mysticlands/house1.png";
@@ -6,42 +6,43 @@ import Hut from "./images/mysticlands/hut1.png";
 import Entrance from "./images/mysticlands/entrance1.png";
 import Cave from "./images/mysticlands/cave1.png";
 import Fortress from "./images/mysticlands/fortress1.png";
+ 
 
  
  
 export const galleryPixel = [
     {
       name: MysticSword,
-      alt: "MysticSword",
+      alt: "mysticSword",
     },
     {
       name: Winter,
-      alt: "Winter",
+      alt: "winter",
     },
     {
         name: Forest,
-        alt: "Forest",
+        alt: "forest",
       },
       {
         name: House,
-        alt: "House",
+        alt: "house",
       },
     
     {
      name: Hut,
-     alt: "Hut",
+     alt: "hut",
      },
     {
       name: Entrance,
-      alt: "Entrance",
+      alt: "entrance",
     },
     {
         name: Cave,
-        alt: "Cave",
+        alt: "cave",
       },
     {
         name: Fortress,
-        alt: "Fortress",
+        alt: "fortress",
       },
   
  

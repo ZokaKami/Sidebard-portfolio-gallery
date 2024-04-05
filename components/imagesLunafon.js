@@ -1,5 +1,5 @@
 import AssetsOne from "./images/AssetsOne.png";
-import AssetsTwo from "./images/AssetsTwo.png";
+
 import BackgroundOne from "./images/BackgroundOne.png";
 import FieldOne from "./images/FieldOne.png";
 import FoilageOne from "./images/FoilageOne.png";
@@ -9,35 +9,37 @@ import WoodOne from "./images/WoodOne.png";
 
  
  
-export const galleryLunafon = [
+export const imagesLunafon = [
     {
       name: AssetsOne,
-      alt: "Assets",
+      alt: "assets",
+      id:"Assets"
     },
     {
       name: BackgroundOne,
-      alt: "Background",
+      alt: "background",
+      id:"Background"
     },
     {
         name: FieldOne,
-        alt: "Field",
+        alt: "field",
       },
       {
         name: FoilageOne,
-        alt: "Foilage",
+        alt: "foilage",
       },
     
     {
      name: FurnaceOne,
-     alt: "Furnace",
+     alt: "furnace",
      },
     {
       name: TreeOne,
-      alt: "Tree",
+      alt: "tree",
     },
     {
         name: WoodOne,
-        alt: "Wood",
+        alt: "wood",
       },
   
  

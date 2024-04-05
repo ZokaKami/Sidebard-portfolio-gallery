@@ -19,8 +19,8 @@ export const imagesHome = [
       alt: "Necromancer",
     },
     {
-      name: Statua,
-      alt: "Statua",
+      name: Sin,
+      alt: "Sin",
     },
     {
      name: Griffon,
@@ -42,9 +42,10 @@ export const imagesHome = [
       name: Protector,
       alt: "Protector",
     },
+    
     {
-      name: Sin,
-      alt: "Sin",
+      name: Statua,
+      alt: "Statua",
     },
  
   
