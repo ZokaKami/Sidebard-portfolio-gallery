@@ -1,25 +1,26 @@
-import AssetsOne from "./images/AssetsOne.png";
-import AssetsTwo from "./images/AssetsTwo.png";
-import AssetsThree from "./images/AssetsThree.png";
-import BackgroundOne from "./images/BackgroundOne.png";
-import BackgroundTwo from "./images/BackgroundTwo.png";
-import BackgroundThree from "./images/BackgroundThree.png";
-import FieldOne from "./images/FieldOne.png";
-import FieldTwo from "./images/FieldTwo.png";
-import FoilageOne from "./images/FoilageOne.png";
-import FoilageTwo from "./images/FoilageTwo.png";
-import FoilageThree from "./images/FoilageThree.png";
-import FoilageFour from "./images/FoilageFour.png";
-import FoilageFive from "./images/FoilageFive.png";
-import FurnaceOne from "./images/FurnaceOne.png";
-import FurnaceTwo from "./images/FurnaceTwo.png";
-import FurnaceThree from "./images/FurnaceThree.png";
-import TreeOne from "./images/TreeOne.png";
-import TreeTwo from "./images/TreeTwo.png";
-import TreeThree from "./images/TreeThree.png";
-import WoodOne from "./images/WoodOne.png";
-import WoodTwo from "./images/WoodTwo.png";
-import WoodThree from "./images/WoodThree.png";
+import AssetsOne from "./images/lunafon/AssetsOne.png";
+import AssetsTwo from "./images/lunafon/AssetsTwo.png";
+import AssetsThree from "./images/lunafon/AssetsThree.png";
+import AssetsFour from "./images/lunafon/AssetsFour.png";
+import BackgroundOne from "./images/lunafon/BackgroundOne.png";
+import BackgroundTwo from "./images/lunafon/BackgroundTwo.png";
+import BackgroundThree from "./images/lunafon/BackgroundThree.png";
+import FieldOne from "./images/lunafon/FieldOne.png";
+import FieldTwo from "./images/lunafon/FieldTwo.png";
+import FoilageOne from "./images/lunafon/FoilageOne.png";
+import FoilageTwo from "./images/lunafon/FoilageTwo.png";
+import FoilageThree from "./images/lunafon/FoilageThree.png";
+import FoilageFour from "./images/lunafon/FoilageFour.png";
+import FoilageFive from "./images/lunafon/FoilageFive.png";
+import FurnaceOne from "./images/lunafon/FurnaceOne.png";
+import FurnaceTwo from "./images/lunafon/FurnaceTwo.png";
+import FurnaceThree from "./images/lunafon/FurnaceThree.png";
+import TreeOne from "./images/lunafon/TreeOne.png";
+import TreeTwo from "./images/lunafon/TreeTwo.png";
+import TreeThree from "./images/lunafon/TreeThree.png";
+import WoodOne from "./images/lunafon/WoodOne.png";
+import WoodTwo from "./images/lunafon/WoodTwo.png";
+import WoodThree from "./images/lunafon/WoodThree.png";
 import MysticSword from "./images/mysticlands/mysticsword.png";
 import WinterOne from "./images/mysticlands/winter1.png";
 import WinterTwo from "./images/mysticlands/winter2.png";
@@ -34,6 +35,7 @@ import HouseThree from "./images/mysticlands/house3.png";
 import HutOne  from "./images/mysticlands/hut1.png";
 import HutTwo from "./images/mysticlands/hut2.png";
 import HutThree from "./images/mysticlands/hut3.png";
+import HutFour from "./images/mysticlands/hut4.png";
 import EntranceOne  from "./images/mysticlands/entrance1.png";
 import EntranceTwo from "./images/mysticlands/entrance2.png";
 import EntranceThree from "./images/mysticlands/entrance3.png";
@@ -58,6 +60,10 @@ const LunafonSubGallery = {
     },
     AssetsThree: {
       name: AssetsThree,
+      description: "place holder tester holder tester egilsgilsgilnslingeilns gsi gsgles gnisg nelsg enslg ensgles geilsgn lsg",
+    },
+    AssetsFour: {
+      name: AssetsFour,
       description: "place holder tester holder tester egilsgilsgilnslingeilns gsi gsgles gnisg nelsg enslg ensgles geilsgn lsg",
     },
   },
@@ -176,6 +182,7 @@ const LunafonSubGallery = {
     HutTwo: { description: "place holder tester", name: HutTwo },
     HutThree: { description: "place holder tester", name: HutThree },
     
+    HutFour: { description: "place holder tester", name: HutFour },
   },
   entrance: {
     title: "Entrance",

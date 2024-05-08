@@ -1,11 +1,11 @@
-import MysticSword from "./images/mysticlands/mysticsword.png";
-import Winter from "./images/mysticlands/winter1.png";
-import Forest from "./images/mysticlands/forest1.png";
-import House from "./images/mysticlands/house1.png";
-import Hut from "./images/mysticlands/hut1.png";
-import Entrance from "./images/mysticlands/entrance1.png";
-import Cave from "./images/mysticlands/cave1.png";
-import Fortress from "./images/mysticlands/fortress1.png";
+import MysticSword from "./images/thumbnails/mysticsword.jpg";
+import Winter from "./images/thumbnails/winter1.jpg";
+import Forest from "./images/thumbnails/forest1.jpg";
+import House from "./images/thumbnails/house1.jpg";
+import Hut from "./images/thumbnails/hut1.jpg";
+import Entrance from "./images/thumbnails/entrance1.jpg";
+import Cave from "./images/thumbnails/cave1.jpg";
+import Fortress from "./images/thumbnails/fortress1.jpg";
  
 
  

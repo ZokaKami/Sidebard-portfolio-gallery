@@ -53,7 +53,7 @@ export default function Header({ setCount, setChangepage }) {
           <li className=" lg:w-[130px] w-[60px] lg:mx-auto pt-2 lg:pt-0">
             <img src={ZeljkaPFP} className="rounded-full     " alt="" />
           </li>
-          <li className="absolute right-3 top-4 lg:hidden">
+          <li className="absolute right-3 top-4 lg:hidden  ">
             <button
               onClick={() => {
                 setOpenMenu(!openMenu);
@@ -107,10 +107,14 @@ export default function Header({ setCount, setChangepage }) {
                 {" "}
                 <Link to="">About me</Link>
               </p>
+              {/*
+
+              Will be added once home is finished
               <p className="border-b-2 w-[100%] py-4 h-fill">
                 {" "}
                 <Link to="home">Home</Link>
               </p>
+          */}
               <p className="border-b-2 w-[100%] py-4 h-fill">
                 {" "}
                 <Link to="lunafon">Lunafon</Link>
@@ -129,9 +133,9 @@ export default function Header({ setCount, setChangepage }) {
           <li
             className={`${
               !openMenu
-                ? "absolute  top-4  left-[80px]  "
-                : "absolute   top-4  left-[40%] right-[40%]  lg:w-auto "
-            }  lg:absolute   lg:top-auto  lg:bottom-5 lg:py-4    lg:left-1/2 lg:right-1/2 transition-all ease-in-out duration-300`}
+                ? "absolute  top-4  inset-0 left-[80px]  "
+                : "absolute   top-4  inset-0 mx-auto    lg:w-auto "
+            }  lg:absolute   lg:top-auto  lg:bottom-5 lg:py-4  w-[130px]    lg:left-1/2 lg:right-1/2 transition-all ease-in-out duration-200`}
           >
             <div className=" lg:flex  lg:flex-nowrap   h-full lg:justify-center     ">
               <p className="font-bold lg:hidden">Zeljka Dobras</p>

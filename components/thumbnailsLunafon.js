@@ -1,11 +1,11 @@
-import AssetsOne from "./images/AssetsOne.png";
+import AssetsOne from "./images/thumbnails/AssetsOne.jpg";
 
-import BackgroundOne from "./images/BackgroundOne.png";
-import FieldOne from "./images/FieldOne.png";
-import FoilageOne from "./images/FoilageOne.png";
-import FurnaceOne from "./images/FurnaceOne.png";
-import TreeOne from "./images/TreeOne.png";
-import WoodOne from "./images/WoodOne.png";
+import BackgroundOne from "./images/thumbnails/BackgroundOne.jpg";
+import FieldOne from "./images/thumbnails/FieldOne.jpg";
+import FoilageOne from "./images/thumbnails/FoilageOne.jpg";
+import FurnaceOne from "./images/thumbnails/FurnaceOne.jpg";
+import TreeOne from "./images/thumbnails/TreeOne.jpg";
+import WoodOne from "./images/thumbnails/WoodOne.jpg";
 
  
  

@@ -25,7 +25,8 @@ function App() {
       <Routes>
         
           <Route path="/" element={<AboutMe />} />
-          <Route path="/home" element={<Gallery />} />
+        {/* Will be added once images are available
+         <Route path="/home" element={<Gallery />} /> */} 
           <Route path="lunafon" element={<GalleryLunafon />} />
           <Route path="/pixel" element={<GalleryPixel />} />
            
