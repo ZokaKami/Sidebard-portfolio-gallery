@@ -69,28 +69,24 @@ export default function Header({ setCount, setChangepage }) {
           </li>
 
           {openMenu && (
-            <div className="w-full lg:hidden  pb-4 ">
+            <div className="w-full block lg:hidden  pb-4 clearfix ">
               <p className="border-b-2 w-[100%] py-4 h-fill">
                 {" "}
-                <Link onClick={() => setOpenMenu(!openMenu)} to="">
+                <Link to="" onClick={() => setOpenMenu(!openMenu)}>
                   About me
                 </Link>
               </p>
-              <p className="border-b-2 w-[100%] py-4 h-fill">
+
+              <p
+                className="border-b-2 w-[100%] py-4 h-fill"
+                onClick={() => setOpenMenu(!openMenu)}
+              >
                 {" "}
-                <Link onClick={() => setOpenMenu(!openMenu)} to="home">
-                  Home
-                </Link>
+                <Link to="lunafon">Lunafon</Link>
               </p>
               <p className="border-b-2 w-[100%] py-4 h-fill">
                 {" "}
-                <Link onClick={() => setOpenMenu(!openMenu)} to="lunafon">
-                  Lunafon
-                </Link>
-              </p>
-              <p className="border-b-2 w-[100%] py-4 h-fill">
-                {" "}
-                <Link onClick={() => setOpenMenu(!openMenu)} to="pixel">
+                <Link to="pixel" onClick={() => setOpenMenu(!openMenu)}>
                   Pixel
                 </Link>
               </p>
@@ -107,14 +103,7 @@ export default function Header({ setCount, setChangepage }) {
                 {" "}
                 <Link to="">About me</Link>
               </p>
-              {/*
 
-              Will be added once home is finished
-              <p className="border-b-2 w-[100%] py-4 h-fill">
-                {" "}
-                <Link to="home">Home</Link>
-              </p>
-          */}
               <p className="border-b-2 w-[100%] py-4 h-fill">
                 {" "}
                 <Link to="lunafon">Lunafon</Link>
@@ -135,9 +124,9 @@ export default function Header({ setCount, setChangepage }) {
               !openMenu
                 ? "absolute  top-4  inset-0 left-[80px]  "
                 : "absolute   top-4  inset-0 mx-auto    lg:w-auto "
-            }  lg:absolute   lg:top-auto  lg:bottom-5 lg:py-4  w-[130px]    lg:left-1/2 lg:right-1/2 transition-all ease-in-out duration-200`}
+            }  lg:absolute   lg:top-auto  lg:bottom-5 lg:py-4  w-[130px] h-fit   lg:left-1/2 lg:right-1/2 transition-all ease-in-out duration-200`}
           >
-            <div className=" lg:flex  lg:flex-nowrap   h-full lg:justify-center     ">
+            <div className=" lg:flex  lg:flex-nowrap     lg:justify-center     ">
               <p className="font-bold lg:hidden">Zeljka Dobras</p>
               {socialMedia}
             </div>
